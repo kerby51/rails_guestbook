@@ -1,0 +1,10 @@
+<h1>GuestBook</h1>
+<% @users.each do |user| %>
+  <div class="user-bio">
+    <h2><%= user.name %></h2>
+    <h4><%= user.occupation %></h4>
+    <h4><%= user.city %></h4>
+
+    <button><a href="/users/<%= user.id %>">Learn More</a></button>
+  </div>
+<% end %>
